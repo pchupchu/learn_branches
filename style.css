@@ -1,8 +1,138 @@
-body {
+@font-face {
+	src: url('./Nunito/Nunito-Regular.ttf');
+  font-family: 'Nunito';
+}
+
+@font-face {
+	src: url('./Nunito/Nunito-SemiBold.ttf');
+  font-family: 'Nunito';
+  font-weight: 600;
+}
+
+@font-face {
+	src: url('./Nunito/Nunito-Bold.ttf');
+  font-family: 'Nunito';
+  font-weight: 700;
+}
+
+
+@font-face {
+	src: url('./Nunito/Nunito-ExtraBold.ttf');
+  font-family: 'Nunito';
+  font-weight: 800;
+}
+
+.page {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  width: 192px;
+  height: 33px;
+  background-image: url(./images/logo.svg);
   margin: 0;
 }
-  
+
+.logo_place_header {
+  position: absolute;
+  top: 23px;
+  left: 80px;
+}
+
 .header {
-  height: 100px;
-  background-color: #000;
-  }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 800px;
+}
+
+.header__links {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  align-items: center;
+  gap: 48px;
+  margin: 27px 0 0 387px;
+  max-width: 430px;
+  max-height: 22px;
+  z-index: 1;
+}
+
+.header__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  color: #222222BF;
+}
+
+.header__link_active {
+  color: #DAA520;
+  font-weight: 800;
+}
+
+.header__description {
+  color: #3E3F43;
+  font-size: 36px;
+  max-width: 504px;
+  z-index: 2;
+  margin: 217px 0 16px 102px;
+}
+
+.header__span {
+  font-weight: 600;
+  z-index: 2;
+}
+
+.header__title {
+  font-size: 72px;
+  font-weight: 700;
+  max-width: 504px;
+  z-index: 2;
+  margin: 0 0 0 100px;
+}
+
+.header__image {
+  width: 568px;
+  height: 577px;
+  object-fit: cover;
+  position: absolute;
+  top: 165px;
+  right: 0;
+  z-index: 0;
+}
+
+.header__rectangle {
+  background-image: url(./images/Rectangle_1.png);
+  width: 370px;
+  height: 800px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.button {
+  background-color: #DAA520;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_place_header {
+  width: 175px;
+  min-height: 50px;
+  z-index: 3;
+  margin: 16px 0 0 100px;
+}
+
+.button__link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+}
