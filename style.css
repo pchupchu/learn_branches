@@ -136,3 +136,91 @@
   font-size: 16px;
   text-align: center;
 }
+
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-name {
+  margin: 120px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 952px;
+  max-height: 98px;
+}
+
+.section-title {
+  color: #2222221A;
+  font-size: 72px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.section-subtitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: #3E3F43;
+  margin: 0;
+}
+
+.about__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 100px 0;
+}
+
+.about__rectangle {
+  background-image: url(./images/Rectangle_2.png);
+  width: 278px;
+  height: 388px;
+  z-index: -1;
+}
+
+.about__image1 {
+  height: 306px;
+  width: 388px;
+  object-fit: cover;
+  position: absolute;
+  top: 340px;
+  left: 138px;
+  z-index: 0;
+}
+
+.about__main-text {
+  max-width: 470px;
+}
+
+.about__text {
+  color: #3E3F43;
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 16px;
+}
+
+.about__span {
+  font-weight: 800;
+}
+
+.about__description {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.about__item_second {
+  margin: 40px 0 0 100px;
+}
+
+.about__main-text_second {
+  max-width: 670px;
+}
+
+.about__image2 {
+  height: 384px;
+  width: 287px;
+}
